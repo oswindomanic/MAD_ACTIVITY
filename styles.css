@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img.freepik.com/premium-photo/abstract-artwork-human-head-silhouette-with-circuit-board-design_941097-223312.jpg?uid=R95440870&ga=GA1.1.949572452.1715218096&semt=ais_hybrid') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.presentation {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4e54c8;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:disabled {
+  background: red;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background: #6b6ff1;
+}
+
+h1, h2, p, ul {
+  margin: 0 0 15px;
+  color: #e4e4e4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+  .presentation {
+      padding: 10px;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+}
